@@ -1,8 +1,8 @@
-# travelagent
+# Travel Agent
 
 Projeto que visa facilitar a busca de roteiros para viajantes pelo mundo. 
 
-## Getting Started
+## Como Usar
 
 Para começar basta digitar a o destino e a quantidade de dias que você irá ficar pelo local, e pronto! 
 
