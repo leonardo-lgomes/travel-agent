@@ -1,16 +1,18 @@
 # travelagent
 
-A new Flutter project.
+Projeto que visa facilitar a busca de roteiros para viajantes pelo mundo. 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Para começar basta digitar a o destino e a quantidade de dias que você irá ficar pelo local, e pronto! 
 
-A few resources to get you started if this is your first Flutter project:
+O app irá mostrar o roteiro separado por cada dia da viagem, e sugestões do que você pode fazer ao longo do período!
 
+O app foi construido em flutter:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Usamos a API do Google Gemini também:
+- [Google Gemini API](https://ai.google.dev/)
+
+Em caso de dúvidas entre em contato comigo, obrigado!
+- Leonardo Gomes.
