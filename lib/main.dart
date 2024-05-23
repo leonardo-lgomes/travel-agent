@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'views/search.dart';
 import 'views/result.dart';
+import 'services/comunication_google_service.dart';
 
 void main(){
    runApp(
@@ -9,4 +10,5 @@ void main(){
       routes:{'/result': (context) => const ResultScreen()},
     )
   );
+  configurateModelGoogleAI();
 }
