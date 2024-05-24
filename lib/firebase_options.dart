@@ -88,4 +88,3 @@ class DefaultFirebaseOptions {
     measurementId: 'G-3GB768X938',
   );
 }
-

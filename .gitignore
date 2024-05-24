@@ -54,6 +54,9 @@ setting.gradle
 #google services
 google-services.json
 
-#firebase option
-firebase_options.dart
+# Firebase
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+ios/firebase_app_id_file.json
+lib/firebase_options.dart
 
