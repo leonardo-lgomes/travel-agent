@@ -41,7 +41,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBNP9D_FQzf_twkw1XC98TqI60x1tCdshY',
+    apiKey: const String.fromEnvironment('API_KEY_FIREBASE_WEB'),
     appId: '1:787379552894:web:64eed4a0c26ca569f74e2f',
     messagingSenderId: '787379552894',
     projectId: 'travelagent-9bcb4',
@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDCFpb30Lv8oQ-RMtfueOen7-INvjgFczs',
+    apiKey: const String.fromEnvironment('API_KEY_FIREBASE_ANDROID'),
     appId: '1:787379552894:android:3c104d40b61967aff74e2f',
     messagingSenderId: '787379552894',
     projectId: 'travelagent-9bcb4',
@@ -59,7 +59,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCjzDbpNYlV3cbLgfbTavBcx0RdgmiaKsw',
+    apiKey: const String.fromEnvironment('API_KEY_FIREBASE_IOS'),
     appId: '1:787379552894:ios:1028443354297bfcf74e2f',
     messagingSenderId: '787379552894',
     projectId: 'travelagent-9bcb4',
@@ -69,7 +69,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCjzDbpNYlV3cbLgfbTavBcx0RdgmiaKsw',
+    apiKey: const String.fromEnvironment('API_KEY_FIREBASE_MACOS'),
     appId: '1:787379552894:ios:1028443354297bfcf74e2f',
     messagingSenderId: '787379552894',
     projectId: 'travelagent-9bcb4',
@@ -79,7 +79,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBNP9D_FQzf_twkw1XC98TqI60x1tCdshY',
+    apiKey: const String.fromEnvironment('API_KEY_FIREBASE_WINDOWS'),
     appId: '1:787379552894:web:83b7357359c06ee1f74e2f',
     messagingSenderId: '787379552894',
     projectId: 'travelagent-9bcb4',

@@ -53,3 +53,7 @@ setting.gradle
 
 #google services
 google-services.json
+
+#firebase option
+firebase_options.dart
+
