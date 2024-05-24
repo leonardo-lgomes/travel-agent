@@ -44,3 +44,12 @@ app.*.map.json
 
 #keys
 .env
+
+#node_modules
+node_modules/
+
+#settings gradle
+setting.gradle
+
+#google services
+google-services.json
