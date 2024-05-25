@@ -20,11 +20,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
   void navigateToResult(){
     Itinerary itinerary = Itinerary(cityController.text, int.parse(daysController.text));
-    
-    Navigator.pushNamed(
-      context,
-     '/result', 
-     arguments: itinerary);
+    Navigator.pushNamed(context, '/result', arguments: itinerary);
   }
 
   @override
