@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/itinerary.dart';
+import '../models/user.dart';
+
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -25,10 +27,17 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final data = ModalRoute.of(context)!.settings.arguments as User;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Pesquisar destino"),
+        actions: [
+          IconButton(
+           onPressed: () => Navigator.pushNamed(context, '/profile', arguments: data),
+           icon: const Icon(Icons.account_circle_sharp)
+          )
+        ],
       ),
       body: Center(
         child: Padding(
@@ -36,6 +45,7 @@ class _SearchScreenState extends State<SearchScreen> {
             child: Form(
               child: Column(
                 children: [
+                  Text('Olá ${data.name}'),
                   TextFormField(
                     controller: cityController,
                     decoration: const InputDecoration(labelText: 'Digite para onde vai: '),

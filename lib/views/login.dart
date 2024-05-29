@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import '../models/user.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -12,6 +13,7 @@ class _LoginScreenState  extends State<LoginScreen>{
   String ?userName = "";
   String ?userEmail = "";
   String ?imageUrl = "";
+  User user = User("","");
 
   Future<void> tryToGoogleLogin()async{
     final result = await _googleLogin();
@@ -24,6 +26,9 @@ class _LoginScreenState  extends State<LoginScreen>{
       userEmail = value.email;
       imageUrl = value.photoUrl;
     });
+    
+    user = User(userName??"", userEmail??"");
+
     return userName != '' ? true : false;
   }
 
@@ -32,7 +37,7 @@ class _LoginScreenState  extends State<LoginScreen>{
   }
 
   login(){
-    Navigator.pushNamed(context, '/search');
+    Navigator.pushNamed(context, '/search', arguments: user);
   }
 
   @override
