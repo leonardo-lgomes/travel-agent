@@ -26,7 +26,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text("Tela de perfil"),
+        title: const Text("Tela de perfil")
       ),
       body: Center(
         child: Padding(
@@ -34,6 +34,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             child: Form(
               child: Column(
                 children: [
+                  ClipRRect(borderRadius: BorderRadius.circular(50.0), child: Image.network(data.urlImage)),
                   Text('Olá ${data.name}'),
                   Text('Seu email é: ${data.email}'),
                   const SizedBox(height: 20),

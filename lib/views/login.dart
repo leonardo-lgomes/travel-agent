@@ -13,7 +13,7 @@ class _LoginScreenState  extends State<LoginScreen>{
   String ?userName = "";
   String ?userEmail = "";
   String ?imageUrl = "";
-  User user = User("","");
+  User user = User("","","");
 
   Future<void> tryToGoogleLogin()async{
     final result = await _googleLogin();
@@ -27,7 +27,7 @@ class _LoginScreenState  extends State<LoginScreen>{
       imageUrl = value.photoUrl;
     });
     
-    user = User(userName??"", userEmail??"");
+    user = User(userName??"", userEmail??"", imageUrl??"");
 
     return userName != '' ? true : false;
   }
@@ -46,6 +46,7 @@ class _LoginScreenState  extends State<LoginScreen>{
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Tela Login"),
+        automaticallyImplyLeading: false
       ),
       body: Center(
         child: Padding(

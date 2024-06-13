@@ -32,6 +32,7 @@ class _SearchScreenState extends State<SearchScreen> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Pesquisar destino"),
+        automaticallyImplyLeading: data.email != "" ? false : true,
         actions: [
           IconButton(
            onPressed: () => Navigator.pushNamed(context, '/profile', arguments: data),
