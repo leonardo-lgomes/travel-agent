@@ -19,11 +19,10 @@ Future<ResultItinerary> sendMessageGoogleAI(String city, int days) async{
   return result;
 }
 
-// Future<ResultItinerary> fakeSendMessageGoogleAI(String city, int days) async{
-//   var response = '{"title":"roteiro de maceió para x dias","description":"cidade linda", "days":[{"day":"1","title":"titulo do dia","description":"desc do dia","activities":[{"name":"atividade do dia","description":"desc da atividade","time":"13h","type":"tipo da atividade"}]}]}';
-//   var result = formatResultItineraryText(response);
-//   print(result);
-//   return result;
-// }
+Future<ResultItinerary> fakeSendMessageGoogleAI(String city, int days) async{
+  var response = '{"title":"roteiro de maceió para x dias","description":"cidade linda", "days":[{"day":"1","title":"titulo do dia","description":"desc do dia desc do dia desc do dia desc do dia desc do diadesc do dia desc do dia","activities":[{"name":"atividade do dia","description":"desc da atividade desc da atividade desc da atividade desc da atividade","time":"13h","type":"tipo da atividade"}, {"name":"2ª atividade do dia","description":"desc da 2ª atividade","time":"13h","type":"tipo da atividade"}]},{"day":"2","title":"titulo do dia 2","description":"desc do dia","activities":[{"name":"atividade do dia","description":"desc da atividade desc da atividade desc da atividade desc da atividade desc da atividade","time":"13h","type":"tipo da atividade"}]}]}';
+  var result = formatResultItineraryText(response);
+  return result;
+}
 
 
